@@ -23,7 +23,9 @@
 }
 
 .todo {
-  width: 500px;
+  padding: 2rem;
+  max-width: 960px;
+  width: 95vw;
   height: 700px;
   background: var(--light);
   border-radius: 10px;

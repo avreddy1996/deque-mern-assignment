@@ -5,13 +5,13 @@ const cors = require('cors')
 
 dotenv.config({ path: './config/config.env' });
 
-const connectDB = require('./config/db');
-connectDB();
+// const connectDB = require('./config/db');
+// connectDB();
 
 // ----------------------------------
 // Routes Import
 // ----------------------------------
-const list = require('./routes/list');
+const converter = require('./routes/converter');
 
 
 // ----------------------------------
@@ -27,8 +27,8 @@ if (process.env.NODE_ENV === 'development') {
 
 // ----------------------------------
 // API Routes
-// ----------------------------------
-app.use('/api/v1/list', list);
+// ----------------------------------\
+app.use('/api/v1/convert',converter);
 
 // ----------------------------------
 // Express server
